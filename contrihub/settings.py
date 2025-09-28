@@ -17,6 +17,13 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['*']
 
+# CSRF trusted origins for cross-origin requests
+CSRF_TRUSTED_ORIGINS = [
+    'https://computercodingclub.in',
+    'https://www.computercodingclub.in',
+    # Add your new domain here
+]
+
 # Application definition
 
 INSTALLED_APPS = [
